@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cadastro.produto/cadastro.produto.iml" filepath="$PROJECT_DIR$/cadastro.produto/cadastro.produto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cadastro.usuario/cadastro.usuario.iml" filepath="$PROJECT_DIR$/cadastro.usuario/cadastro.usuario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orquestrador/orquestrador.iml" filepath="$PROJECT_DIR$/orquestrador/orquestrador.iml" />
+    </modules>
+  </component>
+</project>

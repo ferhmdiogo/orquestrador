@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+  spring:
+    application:
+      name: orquestrador
+
+  management:
+    health:
+      diskspace:
+        enabled: false
+    endpoint:
+      prometheus:
+        show-details: always
+    endpoints:
+      web:
+        exposure:
+          include: 'prometheus'
+
+  info:
+    app:
+      name: @project.name@

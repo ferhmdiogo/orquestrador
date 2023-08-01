@@ -6,8 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.orquestrador.repository.response.ProdutoResponse;
 import com.orquestrador.repository.response.UsuarioResponse;
 import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
 
-import javax.annotation.processing.Processor;
 import java.util.List;
 import java.util.stream.Collectors;
 

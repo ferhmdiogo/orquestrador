@@ -8,6 +8,7 @@ import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.apache.camel.component.http.HttpMethods;
 
 @Component
 public class ExemploCamelRouter extends RouteBuilder {
@@ -43,6 +44,18 @@ public class ExemploCamelRouter extends RouteBuilder {
                 .log("----> ${body}")
                 .throwException(new MensagemErrorCamelException("Usuário caiu"))
                 .log("error ->${body}")
+                .end();
+    }
+
+    private void acessarEndpointComOpenFeignClient() {
+        from(ExemploCamelRouter.USUARIO)
+                .bean(usuarioRepository, "retornaUsuarios()")
+                .log("----> ${body}")
+                .process(new UsuarioProcessor())
+                .log("->${body}")
+                .to(ExemploCamelRouter.PRODUTO)
+                .process(new ProdutoProcessor())
+                .log("->produto")
                 .end();
     }
 

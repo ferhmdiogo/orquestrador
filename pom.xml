@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <parent>
-        <groupId>com.orquestrador-apache</groupId>
+        <groupId>com.orquestrador</groupId>
         <artifactId>maven-simple</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>

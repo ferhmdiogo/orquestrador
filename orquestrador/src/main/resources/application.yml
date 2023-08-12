@@ -12,10 +12,12 @@ server:
     endpoint:
       prometheus:
         show-details: always
+      metrics:
+        enabled: true
     endpoints:
       web:
         exposure:
-          include: 'prometheus'
+          include: '*'
 
   info:
     app:

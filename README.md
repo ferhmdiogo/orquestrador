@@ -28,8 +28,6 @@
 ## Tecnologias
 - Java 11
 - Spring Boot 2.7.4
-    - spring-boot-starter-web
-    - spring-boot-starter-data-jpa
 - Lombok
 - H2
 - Apache Camel (Embedded no Spring Boot)
